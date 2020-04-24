@@ -37,7 +37,7 @@ static NSString* _appVersion = nil;
 + (void)getExternalIPAddressWithCompletionBlock:(void (^)(NSString *ipAddress, NSError *error))completionBlock {
 
     
-    AFHTTPRequestOperationManager *echoIPSession = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://echoip.gosmd.net"]];
+    AFHTTPRequestOperationManager *echoIPSession = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://myexternalip.com/raw"]];
 
     echoIPSession.responseSerializer = [[AFHTTPResponseSerializer alloc] init];
     
